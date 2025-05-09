@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "title": "Dbal Bundle для Symfony",
+    "description": "Высокопроизводительное решение для работы с базами данных в Symfony-приложениях",
+    "documentation": "Документация",
+    "github": "GitHub",
+    "toastDocumentation": "Документация скоро будет доступна!",
+    "toastGithub": "GitHub репозиторий скоро будет доступен!"
+  },
+  "documentation": {
+    "title": "Документация",
+    "description": "Подробные руководства и справочные материалы для разработчиков",
+    "error": "Ошибка загрузки содержимого.",
+    "categories": [
+      {
+        "title": "Введение",
+        "icon": "book",
+        "items": [
+          {
+            "title": "Обзор Dbal Bundle",
+            "content": "",
+            "link": "/guides/overview.mdx"
+          },
+          {
+            "title": "Установка",
+            "content": "",
+            "link": "/guides/installation.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Основы",
+        "icon": "database",
+        "items": [
+          {
+            "title": "DbalManagerFactory",
+            "content": "",
+            "link": "/guides/dbal-manager.mdx"
+          },
+          {
+            "title": "Итераторы",
+            "content": "",
+            "link": "/guides/iterators.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Bulk-операции",
+        "icon": "code",
+        "items": [
+          {
+            "title": "Bulk Insert",
+            "content": "",
+            "link": "/guides/bulk-insert.mdx"
+          },
+          {
+            "title": "Bulk Update",
+            "content": "",
+            "link": "/guides/bulk-update.mdx"
+          },
+          {
+            "title": "Bulk Upsert",
+            "content": "",
+            "link": "/guides/bulk-upsert.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "icon": "shield",
+        "items": [
+          {
+            "title": "Совместимость",
+            "content": "",
+            "link": "/guides/compatibility.mdx"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "sections": [
+      {
+        "title": "Документация",
+        "links": [{ "label": "Руководства", "href": "/documentation" }]
+      },
+      {
+        "title": "Сообщество",
+        "links": [{ "label": "GitHub", "href": "#" }]
+      }
+    ],
+    "copyright": "Dbal Bundle для Symfony. Все права защищены.",
+    "madeWith": "Создано с",
+    "community": "для сообщества Symfony"
+  },
+  "feature": {
+    "title": "Возможности Dbal Bundle",
+    "subtitle": "Оптимизируйте работу с базами данных в ваших Symfony-приложениях",
+    "features": [
+      {
+        "title": "Высокая производительность",
+        "description": "Оптимизировано для высоконагруженных систем, где стандартные возможности Doctrine ORM становятся узким местом."
+      },
+      {
+        "title": "Прямой доступ к DBAL",
+        "description": "Эффективная работа с базой данных на уровне Doctrine DBAL без накладных расходов ORM."
+      },
+      {
+        "title": "Масштабируемость",
+        "description": "Разработано с учетом масштабирования для обработки больших объемов данных и высоких нагрузок."
+      },
+      {
+        "title": "Удобные абстракции",
+        "description": "Предоставляет интуитивно понятные интерфейсы и абстракции для работы с базой данных."
+      },
+      {
+        "title": "Интеграция с Symfony",
+        "description": "Полная интеграция с экосистемой Symfony для бесшовного использования в ваших проектах."
+      },
+      {
+        "title": "Безопасность",
+        "description": "Встроенные механизмы защиты от SQL-инъекций и других уязвимостей баз данных."
+      }
+    ]
+  },
+  "examples": {
+    "title": "Примеры кода",
+    "description": "Изучите практические примеры использования Dbal Bundle для различных задач.",
+    "loading": "Загрузка...",
+    "copy": "Копировать",
+    "categories": [
+      {
+        "id": "bulk",
+        "name": "Bulk-операции",
+        "file": "bulk.md"
+      },
+      {
+        "id": "finder",
+        "name": "DbalFinder",
+        "file": "finder.md"
+      },
+      {
+        "id": "mutator",
+        "name": "DbalMutator",
+        "file": "mutator.md"
+      },
+      {
+        "id": "iterator",
+        "name": "Итеграторы",
+        "file": "iterators.md"
+      }
+    ],
+    "desc": {
+      "bulk": "Примеры массовых операций вставки, обновления, удаления и апсерт-команд.",
+      "finder": "Поиск и выборка данных через DbalFinder.",
+      "mutator": "Мутация данных: вставка и обновление с помощью DbalMutator.",
+      "commands": "Консольные команды для тестирования и настройки."
+    }
+  }
+}

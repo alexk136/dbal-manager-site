@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Dbal Bundle for Symfony",
+    "description": "High-performance solution for working with databases in Symfony applications",
+    "documentation": "Documentation",
+    "github": "GitHub",
+    "toastDocumentation": "Documentation will be available soon!",
+    "toastGithub": "GitHub repository will be available soon!"
+  },
+  "footer": {
+    "sections": [
+      {
+        "title": "Docs",
+        "links": [{ "label": "Guides", "href": "/documentation" }]
+      },
+      {
+        "title": "Community",
+        "links": [{ "label": "GitHub", "href": "#" }]
+      }
+    ],
+    "copyright": "Dbal Bundle for Symfony. All rights reserved.",
+    "madeWith": "Made with",
+    "community": "for the Symfony community"
+  }
+}
