@@ -1,20 +1,18 @@
 /**
- * Сервис для загрузки и обработки Markdown-файлов
+ * Service for loading and processing Markdown files
  */
-// Кэш для хранения загруженных Markdown-файлов
 const markdownCache: Record<string, string> = {};
+
 /**
- * Загружает содержимое Markdown-файла
- * @param path Путь к Markdown-файлу
- * @returns Содержимое файла в виде строки
+ * Loads the content of a Markdown file
+ * @param path Path to the Markdown file
+ * @returns File content as a string
  */
 export const loadMarkdownFile = async (path: string): Promise<string> => {
-  // Если файл уже в кэше, возвращаем его
   if (markdownCache[path]) {
     return markdownCache[path];
   }
   try {
-    // Загружаем файл через fetch
     const response = await fetch(path);
 
     if (!response.ok) {
@@ -22,8 +20,7 @@ export const loadMarkdownFile = async (path: string): Promise<string> => {
     }
 
     const content = await response.text();
-
-    // Сохраняем в кэш
+    
     markdownCache[path] = content;
 
     return content;
@@ -32,8 +29,9 @@ export const loadMarkdownFile = async (path: string): Promise<string> => {
     throw error;
   }
 };
+
 /**
- * Очищает кэш Markdown-файлов
+ * Clears the Markdown files cache
  */
 export const clearMarkdownCache = (): void => {
   Object.keys(markdownCache).forEach((key) => {

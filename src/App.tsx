@@ -5,7 +5,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from "./pages/Home";
 import Documentation from "./pages/Documentation";
-import Examples from "./pages/Examples";
 import ErrorPage from "./pages/ErrorPage";
 import i18n from "@/i18n";
 

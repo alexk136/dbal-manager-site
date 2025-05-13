@@ -1,8 +1,18 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export default function ErrorPage() {
+
+    const { t } = useTranslation();
+
   return (
+      <>
+          <Helmet>
+              <title>{t("error.title")}</title>
+              <meta name="description" content={t("eror.description")} />
+          </Helmet>
     <div className="min-h-screen bg-[#0D0D0D] text-white flex flex-col items-center justify-center p-8 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute w-96 h-96 bg-orange-600/10 rounded-full blur-3xl top-0 -right-48 animate-pulse-slow"></div>
@@ -25,5 +35,7 @@ export default function ErrorPage() {
         </Button>
       </div>
     </div>
-  );
+
+          </>
+          );
 }

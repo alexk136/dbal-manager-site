@@ -21,5 +21,13 @@
     "copyright": "Dbal Bundle for Symfony. All rights reserved.",
     "madeWith": "Made with",
     "community": "for the Symfony community"
+  },
+  "home": {
+    "title": "Home | Symfony Dbal Bundle",
+    "description": "High-performance solution for working with databases in Symfony applications"
+  },
+  "error": {
+    "title": "Error | Symfony Dbal Bundle",
+    "description": "Error"
   }
 }
